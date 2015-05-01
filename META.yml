@@ -20,4 +20,4 @@ resources:
   bugtracker: https://github.com/jjn1056/Catalyst-Plugin-CurrentComponents/issues
   homepage: https://github.com/jjn1056/Catalyst-Plugin-CurrentComponents
   repository: https://github.com/jjn1056/Catalyst-Plugin-CurrentComponents.git
-version: '0.001'
+version: '0.002'
