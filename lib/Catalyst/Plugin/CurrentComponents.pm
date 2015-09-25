@@ -5,7 +5,7 @@ use Scalar::Util ();
 
 requires 'model', 'view', 'stash';
 
-our $VERSION = '0.002';
+our $VERSION = '0.004';
 
 has 'model_instance_from_return' => (
   is=>'ro',
@@ -15,7 +15,7 @@ has 'model_instance_from_return' => (
 
   sub _build_model_instance_from_return {
     if(my $config = shift->config->{'Plugin::CurrentComponents'}) {
-      return exists $config->{model_from_return} ? $config->{model_from_return} : 0;
+      return exists $config->{model_instance_from_return} ? $config->{model_instance_from_return} : 0;
     } else {
       return 0;
     }
